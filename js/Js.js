@@ -44,12 +44,19 @@ document.addEventListener("DOMContentLoaded", function () {
     }
 
     function handleSubmit(event) {
+       
         checkLogin();
         checkEmail();
         checkPhone();
         checkPassword();
-
- 
+    
+       
+        const login = document.getElementById("login2").value;
+        const email = document.getElementById("email2").value;
+        const phone = document.getElementById("phone2").value;
+        const password = document.getElementById("password2").value;
+    
+        
         if (
             document.getElementById("login_Check").textContent ||
             document.getElementById("email_Check").textContent ||
@@ -57,8 +64,15 @@ document.addEventListener("DOMContentLoaded", function () {
             document.getElementById("password_Check").textContent
         ) {
             event.preventDefault(); 
+        } else {
+            
+            alert("Login: " + login + "\n" +
+                  "Email: " + email + "\n" +
+                  "Phone: " + phone + "\n" +
+                  "Password: " + password);
         }
     }
+    
 
     const form = document.querySelector("form");
     form.addEventListener("submit", handleSubmit);
