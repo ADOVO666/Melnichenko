@@ -1,0 +1,100 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Лабораторная работа №8</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <script src="js/Js.js"></script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container">
+            <img class="logo" src="img/logo.png">
+            <div class="header-text">
+                <div class="animate__animated  animate__animated animate__fadeInLeft">
+                    <h1>С помощью нас вы сможете создать то, о чем</h1>
+                    <span class="header-wish">желаете!</span>
+                    <p class="add ">
+                        Наши возможности + опыт позволят Вам достичь огромного успеха. Мы верим в вас! И знаем это на
+                        все 100%. Вас не остановить!
+                    </p>
+                    <a class="button" href="https://urfu.ru/ru/">Узнать больше...</a>
+                </div>
+                <img class="bidimg animate__animated  animate__animated animate__fadeInRight" src="img/header-img.png">
+            </div>
+        </div>
+    </header>
+
+    <section class="main">
+        <div class="container">
+            <h2 class="main-title">Что Вам необходимо?</h2>
+            <div class="main-flex-box">
+                <div>
+                    <img class="img" src="img/f3.png" class="main" id="image"> 
+                    <h3 class="main-title2" id="title-main2">Первый блок</h3>
+                    <p class="main-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <img class="img" src="img/f4.png" class="main" id="image"> 
+                    <h3 class="main-title2" id="title-main2">Второй блок</h3>
+                    <p class="main-text" >Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+                <div>
+                    <img class="img" src="img/f5.png" class="main" id="image"> 
+                    <h3 class="main-title2" id="title-main2">Третий блок</h3>
+                    <p class="main-text">Lorem, ipsum dolor sit amet consectetur adipisicing elit.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="input-form2" id="register-form">
+        <div class="container">
+            <h2 class="input-text2">Форма регистрации на сайте</h2>
+            <form action="#" method="post" onsubmit="return handleSubmit(event);">
+                <input name="login" id="login2" placeholder="Логин" onchange="checkLogin();">
+                <div><span id="login_Check"></span></div>
+                <input name="email" id="email2" placeholder="Напишите свой E-mail" onchange="checkEmail();">
+                <div><span id="email_Check"></span></div>
+                <input name="phone" id="phone2" placeholder="Телефон" onchange="checkPhone();">
+                <div><span id="phone_Check"></span></div>
+                <input name="password" type= "password" id="password2" placeholder="Пароль" onchange="checkPassword();">
+                <div><span id="password_Check"></span></div>
+
+
+                <button type="submit" class="input-button">Зарегистрироваться</button>
+                
+                    
+                
+            </form>
+        </div>
+    </section>
+
+    <section class="input-form">
+        <div class="container">
+            <h2 class="input-text">Форма заказа обратного звонка</h2>
+            <form action="#" method="post">
+                <input class="form-control" required type="name" name="name" id="name" placeholder="Имя" min="2">
+                <input class="form-control" required type="email" name="email" id="email" placeholder="Напишите свой E-mail">
+                <input class="form-control" required pattern="^\+?\d{10,15}$" type="phone" name="phone" id="phone" placeholder="Телефон">
+                <input class="form-control" required type="text" id="theme-text" placeholder="Какая тема Вас интересует?" maxlength="200">
+                <button class="input-button">Отправить вопрос!</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="bottom">
+        <p>© Всё на этом сайте защищено</p>
+        <p>Выполнил Мельниченко Никита РИ-321055</p>
+    </footer>
+</body>
+
+</html>
+
